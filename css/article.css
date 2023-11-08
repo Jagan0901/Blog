@@ -1,0 +1,28 @@
+.blog-list {
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog_img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.blog_title{
+    cursor: pointer;
+}
+
+.blog-item :hover{
+    text-decoration: underline;
+}
+
+.blog-title{
+    background-color: aqua;
+    width: 100%;
+}

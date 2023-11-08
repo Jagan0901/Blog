@@ -26,11 +26,16 @@ fetch("https://admin-backend-rmbp.onrender.com/api/blog") // Sample dummy API fo
           .then((blogDetailsData) => {
             // Display the full content of the blog
             blogDetails.innerHTML = `
+            <div class="blog-title">
             <h1 class="blogdetails_head">${blogDetailsData.title}</h1>
+            </div>
+            <div>
+            
             <img class="blogdetails_img" src=${blogDetailsData.image}/>
             
             <h5 class="blogdetails_blog">${blogDetailsData.blog}</h5>
-            <a class="bt" href="#" onclick="location.reload();">Back to Blog List</a>
+            <a class="bt" href="#" onclick="location.reload();">Back</a>
+            </div>
           `;
             // Show the blog details and hide the list
             blogDetails.style.display = "block";
